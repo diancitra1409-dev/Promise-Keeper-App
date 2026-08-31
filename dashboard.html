@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Keeper Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>Promise Keeper</h2>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="promises.html">My Promises</a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+
+        <h1>Dashboard</h1>
+
+        <!-- Statistik -->
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>Total Promise</h3>
+                <p id="totalPromise">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Active Promise</h3>
+                <p id="activePromise">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed Promise</h3>
+                <p id="completedPromise">0</p>
+            </div>
+
+        </div>
+
+        <!-- Deadline -->
+        <div class="section">
+
+            <h2>Upcoming Deadlines</h2>
+
+            <div id="deadlineList">
+
+                <p>Belum ada deadline.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+
+</body>
+
+</html>

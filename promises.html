@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Promises</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <h2>Promise Keeper</h2>
+
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="promises.html">My Promises</a>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </nav>
+
+    <!-- Content -->
+
+    <div class="container">
+
+        <h1>My Promises</h1>
+
+        <button id="openModalBtn">
+            + Add Promise
+        </button>
+
+        <br><br>
+
+        <div id="promiseList"></div>
+
+    </div>
+
+
+    <!-- ===================== -->
+    <!-- MODAL ADD -->
+    <!-- ===================== -->
+
+    <div id="addModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeAddModal">
+                &times;
+            </span>
+
+            <h2>Add Promise</h2>
+
+            <input
+                type="text"
+                id="addTitle"
+                placeholder="Promise Title"
+            >
+
+            <textarea
+                id="addDescription"
+                placeholder="Description"
+            ></textarea>
+
+            <input
+                type="date"
+                id="addDeadline"
+            >
+
+            <button id="saveAddBtn">
+                Save Promise
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================== -->
+    <!-- MODAL EDIT -->
+    <!-- ===================== -->
+
+    <div id="editModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeEditModal">
+                &times;
+            </span>
+
+            <h2>Edit Promise</h2>
+
+            <input
+                type="text"
+                id="editTitle"
+                placeholder="Promise Title"
+            >
+
+            <textarea
+                id="editDescription"
+                placeholder="Description"
+            ></textarea>
+
+            <button id="saveEditBtn">
+                Save Changes
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="promises.js"></script>
+
+</body>
+
+</html>
