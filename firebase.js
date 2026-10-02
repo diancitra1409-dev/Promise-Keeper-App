@@ -3,7 +3,7 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/12.4.0/firebase
 import { getAuth } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD2iy5zk39N-_5cav3tbS8tF6tGrUOJdfA",
+ 
   authDomain: "promise-keeper-addc6.firebaseapp.com",
   projectId: "promise-keeper-addc6",
   storageBucket: "promise-keeper-addc6.firebasestorage.app",
